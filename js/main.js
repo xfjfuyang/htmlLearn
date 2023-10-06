@@ -10,7 +10,7 @@ reader.onload = function (evt) {
     Output(evt.target.result);
 }
 function OutputFile(f) {
-    if (reader.readyState == 1) {
+    if (reader.readyState === 1) {
         console.log("reader is busy !!");
         return;
     }
@@ -39,7 +39,7 @@ function CreateNode(f) {
     tdType.innerHTML = f.type;
     tr.appendChild(tdType);
     let tdTime = document.createElement("td");
-    tdTime.innerHTML = new Date(f.lastModified);
+    tdTime.innerHTML = (new Date(f.lastModified)).toString();
     tr.appendChild(tdTime);
     tableBody.appendChild(tr);
 }
@@ -76,7 +76,7 @@ dropBox.addEventListener("dragover", Mydragover, false);
 dropBox.addEventListener("drop", Mydrop, false);
 
 function process() {
-    fileList = inputFile.files;
+    let fileList = inputFile.files;
     Output(fileList);
     for (let f in fileList) {
         // Output(f.name);

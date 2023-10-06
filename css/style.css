@@ -7,7 +7,7 @@ body {
 }
 .divC {
     background-color: antiquewhite;
-    font-family: "Microsoft Himalaya";
+    font-family: "Microsoft Himalaya", serif;
     font-size: 20px;
     border: black dashed 1px;
     margin: 10px 10px;
@@ -15,7 +15,7 @@ body {
 }
 
 .inputI {
-    font-family: Candara;
+    font-family: Candara, serif;
     font-size: 30px;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .inputB {
-    font-family: Candara;
+    font-family: Candara, serif;
     font-size: 30px;
     margin: 10px;
 }
@@ -35,11 +35,11 @@ body {
 
 
 .outputL {
-    font-family: Consolas;
+    font-family: Consolas, serif;
     font-size: 10px;
 }
 
 .tableC {
     font-size: 20px;
-    font-family: "Microsoft Himalaya";
+    font-family: "Microsoft Himalaya", serif;
 }
