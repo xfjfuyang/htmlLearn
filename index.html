@@ -1,0 +1,167 @@
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>HTML Learning 1004</title>
+</head>
+
+<body>
+<div class="divC">
+    <h3><a href="https://developer.mozilla.org/zh-CN/docs/Web" target="_blank">MSDN Web Docs</a></h3>
+</div>
+<div class="divContainer">
+    <div class="divC" id="dropBox">
+        <h2>输入 （拖入文件）</h2>
+        <hr>
+        <input class="inputI" id="inputId" type="file" multiple>
+    </div>
+
+    <div class="divC">
+        <button class="inputB" onclick="process()">处理</button>
+        <button class="inputB" onclick="calculate()">计算</button>
+        <button class="inputB" onclick="generate()">生成</button>
+        <button class="inputB" onclick="clearAll()">清除</button>
+    </div>
+
+    <div class="divC">
+        <h2>输出</h2>
+        <hr>
+        <label class="outputL" id="outputId">Please Select File!!</label>
+    </div>
+
+    <div class="divC" id="divOut">
+        <table class="tableC">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Size</th>
+                    <th>Type</th>
+                    <th>LastModifyTime</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<!--    <div class="box1">-->
+<!--        <h1> Heading</h1>-->
+<!--        <h2>山海经</h2>-->
+<!--        <p>《山海经》是中国志怪古籍，大体是战国中后期到汉代初中期的楚国或巴蜀人所作。也是一部荒诞不经的奇书。该书作者不详，古人认为该书是“战国好奇之士取《穆王传》 , 杂录《庄》 、 《列》 、 《离骚》 、 《周书》 、 《晋乘》以成者” 。现代学者也均认为成书并非一时，作者亦非一人。《山海经》全书现存18篇，其余篇章内容早佚。原共22篇约32650字。共藏山经5篇、海外经4篇、海内经5篇、大荒经4篇。《汉书·艺文志》作13篇，未把晚出的大荒经和海内经计算在内。山海经内容主要是民间传说中的地理知识，包括山川、道里、民族、物产、药物、祭祀、巫医等。保存了包括夸父逐日、女娲补天、精卫填海、大禹治水等不少脍炙人口的远古神话传说和寓言故事。</p>-->
+<!--    </div>-->
+
+<!--    <hr>-->
+<!--<h1>Text</h1>-->
+<!--    <p>畏途偶许玩余生，晚节尤难保令句。-->
+<!--        一秃翁真韩长孺，五男儿可晋渊明。-->
+<!--        凄风开户绵重着，漏雨溅应酬酒懒倾。-->
+<!--        俗事沓来败人意，且须坚坐待天晴。 </p>-->
+
+<!--    <p>畏途偶许玩余生，晚节尤难保令句。-->
+<!--        一秃翁真韩长孺，五男儿可晋渊明。-->
+<!--        凄风开户绵重着，漏雨溅应酬酒懒倾。-->
+<!--        <a href="https://www.baidu.com" target="_blank">俗事沓来败人意</a>，且须坚坐待天晴。 </p>-->
+
+<!--    <a href="https://www.baidu.com">百度首页</a>-->
+
+
+<!--    <hr>-->
+<!--<h1>List</h1>-->
+<!--    <ul>-->
+<!--        <li>list item 1</li>-->
+<!--        <li>list item 2</li>-->
+<!--        <li>list item 3</li>-->
+<!--        <li>list item 4</li>-->
+<!--        <li>list item 5</li>-->
+<!--    </ul>-->
+
+<!--    <ol>-->
+<!--        <li>list item 1</li>-->
+<!--        <li>list item 2</li>-->
+<!--        <li>list item 3</li>-->
+<!--        <li>list item 4</li>-->
+<!--        <li>list item 5</li>-->
+<!--    </ol>-->
+
+<!--    <hr>-->
+<!--<h1>Table</h1>-->
+<!--    <table>-->
+<!--        <thead>-->
+<!--            <tr>-->
+<!--                <th>First Name</th>-->
+<!--                <th>Last Name</th>-->
+<!--                <th>Age</th>-->
+<!--                <th>Email</th>-->
+<!--            </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--            <tr>-->
+<!--                <td>xiao</td>-->
+<!--                <td>haohao</td>-->
+<!--                <td>99</td>-->
+<!--                <td>xfjfuyang@163.com</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>xiao</td>-->
+<!--                <td>haohao</td>-->
+<!--                <td>99</td>-->
+<!--                <td>xfjfuyang@163.com</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>xiao</td>-->
+<!--                <td>haohao</td>-->
+<!--                <td>99</td>-->
+<!--                <td>xfjfuyang@163.com</td>-->
+<!--            </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+
+<!--    <hr>-->
+
+<!--<h1>Form</h1>-->
+<!--    <form>-->
+<!--        <div>-->
+<!--            <lable>First Name</lable>-->
+<!--            <input type="text" name="firstname" placeholder="Enter First Name">-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <lable>Last Name</lable>-->
+<!--            <input type="text" name="lastname" placeholder="Enter Last Name">-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <lable>Email</lable>-->
+<!--            <input type="email" name="email" placeholder="Enter Email Addr">-->
+<!--        </div>-->
+<!--        <input type="submit" name="submit" value="Submit">-->
+<!--    </form>-->
+<!--    <br>-->
+<!--    <button>This is a button</button>-->
+
+<!--    <hr>-->
+
+<!--    <img src="img/OIP-C.jpg" alt="This is a img tag">-->
+
+
+<!--    <hr>-->
+<!--    <blockquote>-->
+<!--        门人浮小艇，不比旧专城。-->
+<!--        自愧频来往，何烦数送迎。-->
+<!--        病身缘畏饮，去路似贪程。-->
+<!--        别后君诗进，他时定有名。-->
+<!--    </blockquote>-->
+
+
+<!--    <p><abbr title="explained here">门人浮小艇</abbr>，不比旧专城。-->
+<!--        自愧频来往，何烦数送迎。-->
+<!--        病身缘畏饮，去路似贪程。-->
+<!--        别后君诗进，他时定有名。 </p>-->
+
+
+<!--    <div style="margin-top:1000px"></div>-->
+
+</body>
+
+<script src="js/main.js"></script>
+
+</html>

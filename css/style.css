@@ -1,0 +1,45 @@
+body {
+    background-color: cornsilk;
+}
+
+.divContainer {
+    display: grid;
+}
+.divC {
+    background-color: antiquewhite;
+    font-family: "Microsoft Himalaya";
+    font-size: 20px;
+    border: black dashed 1px;
+    margin: 10px 10px;
+    padding: 10px;
+}
+
+.inputI {
+    font-family: Candara;
+    font-size: 30px;
+}
+
+.inputI:hover {
+    background-color: cornflowerblue;
+}
+
+.inputB {
+    font-family: Candara;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.inputB:hover {
+    background-color: cornflowerblue;
+}
+
+
+.outputL {
+    font-family: Consolas;
+    font-size: 10px;
+}
+
+.tableC {
+    font-size: 20px;
+    font-family: "Microsoft Himalaya";
+}
